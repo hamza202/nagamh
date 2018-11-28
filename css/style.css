@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #4b5a61 url(../img/pattern.png) repeat 0 0;
+    font-family: 'Tajawal', sans-serif;
+    color: #BC9554;
+}
+.page-container{
+    text-align: center;
+    padding-top: 50px;
+}
+.audio-container{
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    background: #fff;
+    padding: 20px;
+    display: inline-block;
+    padding-top: 65px;
+    margin-top: -70px;
+    margin-left: 100px;
+    width: 90%;
+    max-width: 300px;
+}
+.img-container{
+    text-align: center;
+    width: 380px;
+    margin: 0 auto;
+    max-width: 90%;
+    position: relative;
+}
+.img-container img{
+    max-width: 90%;
+    width: 280px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+.square{
+    position: absolute;
+    max-width: 90%;
+    width: 400px;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    display: inline-block;
+    top: 20px;
+
+}
+.square::after{
+    content: '';
+    width: 100%;
+    height: 460px;
+    display: block;
+    background: #BC9554;
+    top: -50px;
+    position: absolute;
+    z-index: -1;
+}
+.audio-container p{
+    color: #BC9554;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 6px 0;
+}
+.btn-container a{
+    text-decoration: none;
+    display: inline-block;
+    background: #4b5a61;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #BC9554;
+    padding: 6px 6px 0;
+    margin: 0 3px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-container a:hover{
+    background: #BC9554;
+}
+.rectangle{
+    position: absolute;
+    max-width: 90%;
+    width: 400px;
+    right: -18px;
+    margin: 0 auto;
+    display: inline-block;
+    top: 35px;
+    z-index: -2;
+}
+.rectangle::before{
+    content: '';
+    height: 400px;
+    width: 200px;
+    border: 2px solid #ccc;
+    position: absolute;
+}
+.rectangle-left{
+    position: absolute;
+    max-width: 90%;
+    width: 400px;
+    left: -18px;
+    margin: 0 auto;
+    display: inline-block;
+    top: 35px;
+    z-index: -2;
+}
+.rectangle-left::before{
+    content: '';
+    height: 250px;
+    width: 200px;
+    border: 2px solid #ccc;
+    position: absolute;
+    left: 0;
+}
+.mt-0{
+    margin-top: 0;
+}
+.audio-container h4{
+    margin: 15px -15px -15px -15px;
+
+    padding: 0;
+    background: #BC9554 ;
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .audio-container{
+        margin-left: 0;
+    }
+    .square{
+        max-width: 100%;
+    }
+    .rectangle{
+        display: none;
+    }
+    .rectangle-left{
+        display: none;
+    }
+}
